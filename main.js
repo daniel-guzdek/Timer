@@ -1,6 +1,6 @@
-const btnStartPause = document.querySelector('.start');
-const btnReset = document.querySelector('.reset');
-const divTimer = document.querySelector('.timer');
+const btnStartPause = document.querySelector('.btn-start');
+const btnReset = document.querySelector('.btn-reset');
+const displayPanel = document.querySelector('.display-panel');
 
 let active = 0;
 let onOff;
@@ -28,12 +28,12 @@ function pause() {
 
 function timer() {
   seconds++
-  divTimer.textContent = (seconds / 100).toFixed(2);
+  displayPanel.textContent = (seconds / 100).toFixed(2);
 }
 
 function reset() {
   seconds = 0;
-  divTimer.textContent = "---";
+  displayPanel.textContent = "---";
   clearInterval(onOff);
 }
 

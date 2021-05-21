@@ -4,34 +4,45 @@
   font-family: monospace;
 }
 
-h1 {
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.main-title {
   text-align: center;
   font: 25px;
-  margin-top: 20vh;
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
 
-.start,
-.reset {
-  position: absolute;
-  top: 40vh;
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-start,
+.btn-reset {
+  flex-basis: 100px;
+  height: 50px;
   padding: 10px 20px;
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
-.start {
-  left: 40%;
-  transform: translateX(-40%);
+.btn-start {
+  margin-right: 5px;
 }
 
-.reset {
-  left: 60%;
-  transform: translateX(-60%);
+.btn-reset {
+  margin-left: 5px;
 }
 
-.timer {
-  position: absolute;
-  top: 55vh;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 30px;
+
+.display-panel {
+  margin: 0 auto;
+  font-size: 20px;
 }
